@@ -6,11 +6,6 @@ class Lyrics extends Component {
         lyrics: getLyrics(),
     };
 
-    handleRemove(id) {
-        const newLyricsList = this.state.lyrics.filter((lyric) => lyric._id !== id);
-        this.setState({lyrics: newLyricsList});
-    }
-
     render() {
         const lyricsCount = this.state.lyrics.length;
         if (lyricsCount === 0) {
