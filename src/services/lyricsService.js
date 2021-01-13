@@ -38,6 +38,8 @@ export function saveMovie(movie) {
     lyricsInDb.punch = lyrics.punch;
     lyricsInDb.titre = lyrics.titre;
     lyricsInDb.artiste = lyrics.artiste;
+    lyricsInDb.album = lyrics.album;
+    lyricsInDb.annee = lyrics.annee;
 
     if (!lyricsInDb._id) {
         lyricsInDb._id = Date.now();
