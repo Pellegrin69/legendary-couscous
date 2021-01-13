@@ -65,6 +65,14 @@ const lyrics = [
         album: "Comme prévu",
         annee: "2017"
     },
+    {
+        punch: "Ils n'aiment pas les étrangers, sans lеs étrangers, quoi, ils seraient encore en train de vivre sous Vichy",
+        _id: "9",
+        titre: "mitsubishi",
+        artiste: {_id: "3", name: "Alpha Wann"},
+        album: "don dada mixtape vol 1",
+        annee: "2020"
+    }
 ];
 
 export function getLyrics() {
