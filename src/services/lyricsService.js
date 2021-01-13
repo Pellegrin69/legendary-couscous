@@ -25,15 +25,15 @@ const lyrics = [
     },
 ];
 
-export function getMovies() {
+export function getLyrics() {
     return lyrics;
 }
 
-export function getMovie(id) {
+export function getLyric(id) {
     return lyrics.find(l => l._id === id);
 }
 
-export function saveMovie(movie) {
+export function saveLyric(lyrics) {
     let lyricsInDb = lyrics.find(l => l._id === lyrics._id) || {};
     lyricsInDb.punch = lyrics.punch;
     lyricsInDb.titre = lyrics.titre;
@@ -49,7 +49,7 @@ export function saveMovie(movie) {
     return lyricsInDb;
 }
 
-export function deleteMovie(id) {
+export function deleteLyric(id) {
     let lyricsInDb = lyrics.find(m => m._id === id);
     lyrics.splice(lyrics.indexOf(lyricsInDb), 1);
     return lyricsInDb;
