@@ -14,12 +14,9 @@ class Lyrics extends Component {
         return (
             <>
                 <p>Il y a {lyricsCount} punchlines dans la base !</p>
-
-                {this.state.lyrics.map((lyric) => (
-                    <ul key={lyric._id}>
-                        <li>{lyric.artiste}</li>
-                    </ul>
-                ))}
+                <ul>{this.state.lyrics.map((lyric) =>
+                    <li key={lyric.artiste._id}>{lyric.artiste.name}</li>)}
+                </ul>
             </>
         );
     }

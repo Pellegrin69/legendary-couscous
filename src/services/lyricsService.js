@@ -7,7 +7,7 @@ const lyrics = [
         titre: "Les Meilleurs",
         artiste: {_id: "1", name: "Booba"},
         album: "D.U.C",
-        annee: "2015",
+        annee: "2015"
     },
     {
         punch: "T'as tout misé sur ta chatte, normal qu'on s'rappelle plus d'ta tête",
@@ -15,7 +15,7 @@ const lyrics = [
         titre: "On est au calme",
         artiste: {_id: "2", name: "Guizmo"},
         album: "Jamais 203",
-        annee: "2013",
+        annee: "2013"
     },
     {
         punch: "Un oeil qui louche pour voir qui va attaquer en traître",
@@ -23,7 +23,7 @@ const lyrics = [
         titre: "Saint-Domingue",
         artiste: {_id: "3", name: "Alpha Wann"},
         album: "Alph Lauren 3",
-        annee: "2018",
+        annee: "2018"
     },
     {
         punch: "Je suis albinos parce que j'suis né pour briller",
@@ -31,7 +31,7 @@ const lyrics = [
         titre: "Arret du coeur",
         artiste: {_id: "4", name: "Kalash Criminel"},
         album: "R.A.S",
-        annee: "2016",
+        annee: "2016"
     },
     {
         punch: "Les nazis re-popent comme dans Call Of Duty car des teubés jugèrent pas la capote utile",
@@ -39,7 +39,7 @@ const lyrics = [
         titre: "Daruma",
         artiste: {_id: "5", name: "Nepal"},
         album: "Adios Bahamas",
-        annee: "2020",
+        annee: "2020"
     },
     {
         punch: "La go est douce, le négro est brut, ça va finir par coller car les opposés s’attirent",
@@ -47,7 +47,7 @@ const lyrics = [
         titre: "Djomb",
         artiste: {_id: "6", name: "Bosh"},
         album: "Synkinisi",
-        annee: "2020",
+        annee: "2020"
     },
     {
         punch: "Y’a que les ficelles de tes strings qui te soutiennent. Je te baise et les draps s’en souviennent",
@@ -55,7 +55,7 @@ const lyrics = [
         titre: "Zoo",
         artiste: {_id: "7", name: "Kaaris"},
         album: "Or Noir",
-        annee: "2013",
+        annee: "2013"
     },
     {
         punch: "Y’a que les ficelles de tes strings qui te soutiennent. Je te baise et les draps s’en souviennent",
@@ -63,7 +63,7 @@ const lyrics = [
         titre: "Roro",
         artiste: {_id: "8", name: "Ninho"},
         album: "Comme prévu",
-        annee: "2017",
+        annee: "2017"
     },
 ];
 
