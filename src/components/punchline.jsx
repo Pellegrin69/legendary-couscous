@@ -1,50 +1,42 @@
-import React, { Component } from "react";
-import { getMovies } from "../services/fakeMovieService";
+import React, {Component} from "react";
+import {getLyrics} from "../services/lyricsService";
 
-class Movies extends Component {
+class Lyrics extends Component {
     state = {
-        movies: getMovies(),
+        lyrics: getLyrics(),
     };
 
     handleRemove(id) {
-        const newMoviesList = this.state.movies.filter((movie) => movie._id !== id);
-        this.setState({ movies: newMoviesList });
+        const newLyricsList = this.state.lyrics.filter((lyric) => lyric._id !== id);
+        this.setState({lyrics: newLyricsList});
     }
 
     render() {
-        const moviesCount = this.state.movies.length;
-        if (moviesCount === 0) {
-            return <p>Pas de film dans la base.</p>;
+        const lyricsCount = this.state.lyrics.length;
+        if (lyricsCount === 0) {
+            return <p>Pas de lyrics dans la base.</p>;
         }
         return (
             <>
-                <p>Il y a {moviesCount} films dans la base !</p>
+                <p>Il y a {lyricsCount} punchlines dans la base !</p>
                 <table className="table">
                     <thead>
                     <tr>
+                        <th>Punchline</th>
+                        <th>Artiste</th>
                         <th>Titre</th>
-                        <th>Genre</th>
-                        <th>Stock</th>
-                        <th>Note</th>
-                        <th></th>
+                        <th>Album</th>
+                        <th>Annee</th>
                     </tr>
                     </thead>
                     <tbody>
-                    {this.state.movies.map((movie) => (
-                        <tr key={movie._id}>
-                            <td>{movie.title}</td>
-                            <td>{movie.genre.name}</td>
-                            <td>{movie.numberInStock}</td>
-                            <td>{movie.dailyRentalRate}</td>
-                            <td>
-                                <button
-                                    class="btn btn-danger btn-sm"
-                                    //onClick={this.handleRemove.bind(this, movie._id)}
-                                    onClick={() => this.handleRemove(movie._id)}
-                                >
-                                    Supprimer
-                                </button>
-                            </td>
+                    {this.state.lyrics.map((lyric) => (
+                        <tr key={lyric._id}>
+                            <td>{lyric.punch}</td>
+                            <td>{lyric.artiste}</td>
+                            <td>{lyric.titre}</td>
+                            <td>{lyric.album}</td>
+                            <td>{lyric.annee}</td>
                         </tr>
                     ))}
                     </tbody>
@@ -54,4 +46,4 @@ class Movies extends Component {
     }
 }
 
-export default Movies;
+export default Lyrics;
