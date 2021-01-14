@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+body{
+  background-image: url("images/fond_decran.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1{
+  text-align: center;
+  margin-left: 100px;
+}
+
+#nbr_artistes{
+  color: whitesmoke;
+  font-size: x-large;
+  font-family: Impact;
+}
+
 div {
   width: 250px;
 }
@@ -42,6 +59,7 @@ ul {
 
 li {
   font: 100 20px/1.5 Helvetica, Verdana, sans-serif;
+  color: whitesmoke;
   border-bottom: 3px solid lightslategray;
   transition: 0.5s;
 }

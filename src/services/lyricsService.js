@@ -117,6 +117,20 @@ const lyrics = [
         punch : {
 
         }
+    },
+    {
+        id_artiste: "13",
+        name_artiste: "Vald",
+        punch : {
+
+        }
+    },
+    {
+        id_artiste: "14",
+        name_artiste: "SCH",
+        punch : {
+
+        }
     }
 ];
 

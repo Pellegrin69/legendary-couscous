@@ -14,7 +14,8 @@ class Lyrics extends Component {
         }
         return (
             <>
-                <p>Il y a {lyricsCount} artistes dans la base !</p>
+                <h1>Legendary Couscous</h1>
+                <p id ="nbr_artistes">Il y a {lyricsCount} artistes dans la base !</p>
                 <ul>
                     {this.state.lyrics.map((lyric, idx) => (<li key={idx}> {lyric.name_artiste} </li>))}
                 </ul>
