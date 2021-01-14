@@ -15,7 +15,9 @@ class Lyrics extends Component {
             <>
                 <p>Il y a {lyricsCount} artistes dans la base !</p>
                 <ul>
-                    {this.state.lyrics.map((lyric, idx) => (<li key={idx}> {lyric.name_artiste} </li>))}
+                    {this.state.lyrics.map((lyric) => (
+                        <li key={lyric.id_artiste}>{lyric.name_artiste}</li>
+                    ))}
                 </ul>
             </>
         );
