@@ -3,6 +3,17 @@ import * as artistesAPI from "./artistService";
 const lyrics = [
     {
         id_artiste: "1",
+        name_artiste: "Alpha Wann",
+        punch: {
+            texte: "Un oeil qui louche pour voir qui va attaquer en traître",
+            id_punch: "1",
+            titre: "Saint-Domingue",
+            album: "Alph Lauren 3",
+            annee: "2018"
+        },
+    },
+    {
+        id_artiste: "2",
         name_artiste: "Booba",
         punch: {
             texte: "Si les meilleurs partent en premiers. Pourquoi suis-je toujours en vie ?",
@@ -13,7 +24,7 @@ const lyrics = [
         }
     },
     {
-        id_artiste: "2",
+        id_artiste: "3",
         name_artiste: "Guizmo",
         punch: {
             texte: "T'as tout misé sur ta chatte, normal qu'on s'rappelle plus d'ta tête",
@@ -23,17 +34,7 @@ const lyrics = [
             annee: "2013"
         }
     },
-    {
-        id_artiste: "3",
-        name_artiste: "Alpha Wann",
-        punch: {
-            texte: "Un oeil qui louche pour voir qui va attaquer en traître",
-            id_punch: "1",
-            titre: "Saint-Domingue",
-            album: "Alph Lauren 3",
-            annee: "2018"
-        },
-    },
+
     {
         id_artiste: "4",
         name_artiste: "Kalash Criminel",
@@ -88,6 +89,48 @@ const lyrics = [
             album: "Comme prévu",
             annee: "2017"
         }
+    },
+    {
+        id_artiste: "9",
+        name_artiste: "Jul",
+        punch : {
+
+        }
+    },
+    {
+        id_artiste: "10",
+        name_artiste: "Damso",
+        punch : {
+
+        }
+    },
+    {
+        id_artiste: "11",
+        name_artiste: "Orelsan",
+        punch : {
+
+        }
+    },
+    {
+        id_artiste: "12",
+        name_artiste: "PLK",
+        punch : {
+
+        }
+    },
+    {
+        id_artiste: "13",
+        name_artiste: "Vald",
+        punch : {
+
+        }
+    },
+    {
+        id_artiste: "14",
+        name_artiste: "SCH",
+        punch : {
+
+        }
     }
 ];
 
@@ -95,7 +138,6 @@ export function getLyrics() {
     console.log(lyrics)
     return lyrics;
 }
-
 export function getLyric(id) {
     return lyrics.find(l => l.id_artiste === id);
 }
@@ -121,3 +163,4 @@ export function deleteLyric(id) {
     lyrics.splice(lyrics.indexOf(lyricsInDb), 1);
     return lyricsInDb;
 }
+
