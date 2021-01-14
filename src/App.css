@@ -58,7 +58,8 @@ ul {
 }
 
 li {
-  font: 100 20px/1.5 Helvetica, Verdana, sans-serif;
+  font: 100 20px/1.5 sans-serif;
+  font-family: stencil;
   color: whitesmoke;
   border-bottom: 3px solid lightslategray;
   transition: 0.5s;
