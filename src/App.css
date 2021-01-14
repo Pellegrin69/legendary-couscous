@@ -29,7 +29,7 @@
 }
 
 body{
-  background-image: url("images/fond_decran.jpg");
+  background-image: url("./images/fond_decran.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -69,5 +69,9 @@ li:hover {
   font-size: 30px;
   background: cornflowerblue;
   transition: 0.2s;
+}
+
+a{
+  color: whitesmoke;
 }
 
