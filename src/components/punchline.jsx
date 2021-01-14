@@ -4,16 +4,7 @@ import {getLyrics} from "../services/lyricsService";
 class Lyrics extends Component {
     state = {
         lyrics: getLyrics(),
-
     };
-
-    fillArtistArray() {
-        let artistArray = []
-        this.state.lyrics.map((artist) =>
-            artistArray.push(artist.artiste.name))
-        console.log(artistArray)
-        return artistArray
-    }
 
     render() {
         const lyricsCount = this.state.lyrics.length;
@@ -22,10 +13,9 @@ class Lyrics extends Component {
         }
         return (
             <>
-                <p>Il y a {lyricsCount} punchlines dans la base !</p>
-                {this.fillArtistArray()}
-                <ul>{this.state.lyrics.map((lyric) =>
-                    <li key={lyric.artiste._id}>{lyric.artiste.name}</li>)}
+                <p>Il y a {lyricsCount} artistes dans la base !</p>
+                <ul>
+                    {this.state.lyrics.map((lyric, idx) => (<li key={idx}> {lyric.name_artiste} </li>))}
                 </ul>
             </>
         );
