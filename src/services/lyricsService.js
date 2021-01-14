@@ -28,7 +28,7 @@ const lyrics = [
     {
         id_artiste: "3",
         name_artiste: "Guizmo",
-        page:"",
+        page:"../pages_artistes/guizmo",
         punch: {
             texte: "T'as tout misé sur ta chatte, normal qu'on s'rappelle plus d'ta tête",
             id_punch: "1",
