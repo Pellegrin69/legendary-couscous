@@ -28,11 +28,27 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div {
+  width: 250px;
 }
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font: 100 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 3px solid lightslategray;
+  transition: 0.5s;
+}
+
+li:hover {
+  font-size: 30px;
+  background: cornflowerblue;
+  transition: 0.2s;
+}
+

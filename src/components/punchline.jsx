@@ -7,6 +7,7 @@ class Lyrics extends Component {
     };
 
     render() {
+
         const lyricsCount = this.state.lyrics.length;
         if (lyricsCount === 0) {
             return <p>Pas de lyrics dans la base.</p>;
@@ -17,7 +18,9 @@ class Lyrics extends Component {
                 <ul>
                     {this.state.lyrics.map((lyric, idx) => (<li key={idx}> {lyric.name_artiste} </li>))}
                 </ul>
+
             </>
+
         );
     }
 }
