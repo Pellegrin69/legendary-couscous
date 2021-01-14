@@ -10,7 +10,7 @@ class Lyrics extends Component {
 
         const lyricsCount = this.state.lyrics.length;
         if (lyricsCount === 0) {
-            return <p>Pas de lyrics dans la base.</p>;
+            return <p id="nbr_artistes">Pas de lyrics dans la base.</p>;
         }
         return (
             <>
