@@ -1,9 +1,15 @@
 import React, {Component} from 'react'
+import {Link} from "react-router-dom";
 
 class Pages extends Component {
     render() {
         return (
-            <h1>Artiste</h1>
+            <>
+                <Link to={'/'}>
+                    <button>Accueil</button>
+                </Link>
+                <h1>Page artiste</h1>
+            </>
         )
     }
 }

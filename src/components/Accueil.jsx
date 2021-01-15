@@ -140,7 +140,7 @@ class Accueil extends Component {
 
     render() {
         const artisteCount = this.state.ariste.length
-        let annonceArtiste = ""
+        let annonceArtiste
         if (artisteCount === 0) {
             annonceArtiste = "Il n'y a aucun artiste dans la base"
         } else {
@@ -159,7 +159,6 @@ class Accueil extends Component {
                 </ul>
             </>
         )
-
     }
 }
 
