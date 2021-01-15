@@ -29,7 +29,7 @@
 }
 
 body{
-  background-image: url("images/fond_decran.jpg");
+  background-image: url("./images/fond_decran.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }

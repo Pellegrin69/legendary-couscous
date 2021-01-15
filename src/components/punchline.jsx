@@ -1,30 +1,40 @@
 import React, {Component} from "react";
-import {getLyrics} from "../services/lyricsService";
 
 class Lyrics extends Component {
-    state = {
-        lyrics: getLyrics(),
-    };
+    getLyrics() {
+        console.log(lyrics)
+        return lyrics;
+    }
+
+    getLyric(id) {
+        return lyrics.find(l => l.id_artiste === id);
+    }
+
+    saveLyric(lyrics) {
+        let lyricsInDb = lyrics.find(l => l._id === lyrics._id) || {};
+        lyricsInDb.punch = lyrics.punch;
+        lyricsInDb.titre = lyrics.titre;
+        lyricsInDb.artiste = artistesAPI.artistes.find(a => a._id === lyrics.artisteId);
+        lyricsInDb.album = lyrics.album;
+        lyricsInDb.annee = lyrics.annee;
+
+        if (!lyricsInDb._id) {
+            lyricsInDb._id = Date.now();
+            lyrics.push(lyricsInDb);
+        }
+
+        return lyricsInDb;
+    }
+
+    deleteLyric(id) {
+        let lyricsInDb = lyrics.find(m => m.id_artiste === id);
+        lyrics.splice(lyrics.indexOf(lyricsInDb), 1);
+        return lyricsInDb;
+    }
+
 
     render() {
-
-        const lyricsCount = this.state.lyrics.length;
-        if (lyricsCount === 0) {
-            return <p id="nbr_artistes">Pas de lyrics dans la base.</p>;
-        }
-        return (
-            <>
-                <h1>Legendary Couscous</h1>
-                <p id ="nbr_artistes">Il y a {lyricsCount} artistes dans la base !</p>
-                <ul>
-                    {this.state.lyrics.map((lyric) => (
-                        <li key={lyric.id_artiste}>{lyric.name_artiste}</li>
-                    ))}
-                </ul>
-
-            </>
-
-        );
+        return (console.log("punchline.jsx render"));
     }
 }
 
