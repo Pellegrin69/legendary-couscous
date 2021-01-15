@@ -7,6 +7,7 @@ class App extends React.Component {
             {
                 id_artiste: "1",
                 name_artiste: "Alpha Wann",
+                page: "",
                 punch: {
                     texte: "Un oeil qui louche pour voir qui va attaquer en traître",
                     id_punch: "1",
@@ -15,10 +16,9 @@ class App extends React.Component {
                     annee: "2018"
                 },
             }, {
-                id_artiste: "2"
-                ,
-                name_artiste: "Booba"
-                ,
+                id_artiste: "2",
+                name_artiste: "Booba",
+                page: "",
                 punch: {
                     texte: "Si les meilleurs partent en premiers. Pourquoi suis-je toujours en vie ?",
                     id_punch: "1",
@@ -29,6 +29,7 @@ class App extends React.Component {
             }, {
                 id_artiste: "3",
                 name_artiste: "Guizmo",
+                page: "pages_artistes/guizmo.html",
                 punch: {
                     texte: "T'as tout misé sur ta chatte, normal qu'on s'rappelle plus d'ta tête",
                     id_punch: "1",
@@ -39,6 +40,7 @@ class App extends React.Component {
             }, {
                 id_artiste: "4",
                 name_artiste: "Kalash Criminel",
+                page: "",
                 punch: {
                     texte: "Je suis albinos parce que j'suis né pour briller",
                     id_punch: "1",
@@ -49,6 +51,7 @@ class App extends React.Component {
             }, {
                 id_artiste: "5",
                 name_artiste: "Nepal",
+                page: "",
                 punch: {
                     texte: "Les nazis re-popent comme dans Call Of Duty car des teubés jugèrent pas la capote utile",
                     id_punch: "1",
@@ -59,6 +62,7 @@ class App extends React.Component {
             }, {
                 id_artiste: "6",
                 name_artiste: "Bosh",
+                page: "",
                 punch: {
                     texte: "La go est douce, le négro est brut, ça va finir par coller car les opposés s’attirent",
                     id_punch: "1",
@@ -69,6 +73,7 @@ class App extends React.Component {
             }, {
                 id_artiste: "7",
                 name_artiste: "Kaaris",
+                page: "",
                 punch: {
                     texte: "Y’a que les ficelles de tes strings qui te soutiennent. Je te baise et les draps s’en souviennent",
                     id_punch: "1",
@@ -79,6 +84,7 @@ class App extends React.Component {
             }, {
                 id_artiste: "8",
                 name_artiste: "Ninho",
+                page: "",
                 punch: {
                     texte: "Y’a que les ficelles de tes strings qui te soutiennent. Je te baise et les draps s’en souviennent",
                     id_punch: "1",
@@ -89,27 +95,44 @@ class App extends React.Component {
             }, {
                 id_artiste: "9",
                 name_artiste: "Jul",
-                punch: {}
+                page: "",
+                punch: {
+                    texte: "",
+                    id_punch: "1",
+                    titre: "Anti BDH",
+                    album: "LACRIZEOMIC",
+                    annee: "2014"
+                }
             }, {
                 id_artiste: "10",
                 name_artiste: "Damso",
-                punch: {}
+                page: "",
+                punch: {
+                    texte: "Ça commence par du Roméo et Juliette, ça finit par du Jacquie et Michel ",
+                    id_punch: "1",
+                    titre: "Z. Kietu",
+                    album: "Ispéité",
+                    annee: "2017"
+                }
             }, {
                 id_artiste: "11",
-                name_artiste:
-                    "Orelsan",
+                name_artiste: "Orelsan",
+                page: "",
                 punch: {}
             }, {
                 id_artiste: "12",
                 name_artiste: "PLK",
+                page: "",
                 punch: {}
             }, {
                 id_artiste: "13",
                 name_artiste: "Vald",
+                page: "",
                 punch: {}
             }, {
                 id_artiste: "14",
                 name_artiste: "SCH",
+                page: "",
                 punch: {}
             }
         ]
@@ -125,7 +148,7 @@ class App extends React.Component {
                     <p id="nbr_artistes">Il y a {lyricsCount} artistes dans la base !</p>
                     <ul>
                         {this.state.ariste.map((artiste) => (
-                            <li key={artiste.id_artiste}>{artiste.name_artiste}</li>
+                            <li key={artiste.id_artiste}><a href={artiste.page}>{artiste.name_artiste}</a></li>
                         ))}
                     </ul>
 
