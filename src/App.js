@@ -151,7 +151,6 @@ class App extends React.Component {
                             <li key={artiste.id_artiste}><a href={artiste.page}>{artiste.name_artiste}</a></li>
                         ))}
                     </ul>
-
                 </>
             </main>
         )
