@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Accueil from "./components/Accueil";
 import Pages from "./components/Pages";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import Page from "./components/Page";
 
 class App extends React.Component {
 
@@ -10,8 +11,12 @@ class App extends React.Component {
         return (
             <main role="main" className="container">
                 <Router>
-                    <Route path="/" exact component={Accueil}/>
-                    <Route path="/Pages" exact component={Pages}/>
+                    <Switch>
+                        <Route path="/" exact component={Accueil}/>
+                        <Route path="/Page" exact component={Pages}/>
+                        <Route path="/Page/:slug" exact component={Page}/>
+                        <Route path="/ui" exact component={() => <div>ERREUR 404</div>}/>
+                    </Switch>
                 </Router>
             </main>
         )

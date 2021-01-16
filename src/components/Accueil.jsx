@@ -152,7 +152,7 @@ class Accueil extends Component {
                 <p id="nbr_artistes">{annonceArtiste}</p>
                 <ul>
                     {this.state.ariste.map((artiste) => (
-                        <Link to={`/Pages/${artiste.name_artiste}`}>
+                        <Link to={`/Page/${artiste.name_artiste}`}>
                             <li key={artiste.id_artiste}>{artiste.name_artiste}</li>
                         </Link>
                     ))}
