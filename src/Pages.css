@@ -15,3 +15,7 @@ button:hover {
     color: #5EB6DD;
     transition: 0.5s;
 }
+
+p.punch {
+    color: white;
+}

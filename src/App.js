@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 import Accueil from "./components/Accueil";
 import Pages from "./components/Pages";
 import Page from "./components/Page";
+import './App.css';
 
 class App extends React.Component {
 
@@ -15,7 +15,7 @@ class App extends React.Component {
                         <Route path="/" exact component={Accueil}/>
                         <Route path="/Page" exact component={Pages}/>
                         <Route path="/Page/:slug" exact component={Page}/>
-                        <Route path="/ui" exact component={() => <div>ERREUR 404</div>}/>
+                        <Redirect to="/"/>
                     </Switch>
                 </Router>
             </main>
