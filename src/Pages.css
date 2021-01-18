@@ -16,6 +16,38 @@ button:hover {
     transition: 0.5s;
 }
 
+
 p.punch {
-    color: white;
+    color: whitesmoke;
+    background-color: #34393E;
+    border: solid whitesmoke 2px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Bodoni MT";
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+div.infos{
+    background-color: whitesmoke;
+    border: solid whitesmoke 2px;
+    border-radius: 6px;
+    text-align: center;
+    font-style: italic;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+}
+
+div.infos:hover{
+    background-color: #34393E;
+    color: whitesmoke;
+    border-radius: 0;
+    transition: 0.2s;
+    width: 30%;
 }

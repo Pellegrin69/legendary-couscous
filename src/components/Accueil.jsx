@@ -136,11 +136,11 @@ class Accueil extends Component {
                 punch: {}
             }
         ]
-    }
+    };
 
     render() {
-        const artisteCount = this.state.ariste.length
-        let annonceArtiste
+        const artisteCount = this.state.ariste.length;
+        let annonceArtiste;
         if (artisteCount === 0) {
             annonceArtiste = "Il n'y a aucun artiste dans la base"
         } else {
