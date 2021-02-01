@@ -29,7 +29,7 @@ class Accueil extends Component {
             }, {
                 id_artiste: "3",
                 name_artiste: "Guizmo",
-                page: "pages_artistes/guizmo.html",
+                page: "",
                 punch: {
                     texte: "T'as tout misé sur ta chatte, normal qu'on s'rappelle plus d'ta tête",
                     id_punch: "1",
@@ -86,18 +86,18 @@ class Accueil extends Component {
                 name_artiste: "Ninho",
                 page: "",
                 punch: {
-                    texte: "Y’a que les ficelles de tes strings qui te soutiennent. Je te baise et les draps s’en souviennent",
+                    texte: "J’suis dans l’hôtel, y’a plus d’étoiles dans ma suite que dans le ciel",
                     id_punch: "1",
-                    titre: "Roro",
-                    album: "Comme prévu",
-                    annee: "2017"
+                    titre: "Pavé",
+                    album: "M.I.L.S 2.0",
+                    annee: "2018"
                 }
             }, {
                 id_artiste: "9",
                 name_artiste: "Jul",
                 page: "",
                 punch: {
-                    texte: "",
+                    texte: "T'as mère c'est de l'or ne l'a fait pas pelurer pour de l'argent",
                     id_punch: "1",
                     titre: "Anti BDH",
                     album: "LACRIZEOMIC",
@@ -118,22 +118,43 @@ class Accueil extends Component {
                 id_artiste: "11",
                 name_artiste: "Orelsan",
                 page: "",
-                punch: {}
+                punch: {
+                    texte: "Ma gueule de bois ferait passer Pinnochio pour un vrai ptit garçon",
+                    titre: "Jimmy Punchline",
+                    album: "Perdu d'avance",
+                    annee: "2009"
+                }
             }, {
                 id_artiste: "12",
                 name_artiste: "PLK",
                 page: "",
-                punch: {}
+                punch: {
+                    texte: "Ta meuf a mis l’cadenas sur Insta’, j’crois qu’j’ai fais sauter la serrure",
+                    titre: "Intro100000",
+                    album: "Mental",
+                    annee: "2019"
+                }
             }, {
                 id_artiste: "13",
                 name_artiste: "Vald",
                 page: "",
-                punch: {}
+                punch: {
+                    texte: "Mon petit doigt m'a dit d'lever celui du milieu",
+                    titre: "Mon insolence",
+                    album: "Ricky Martin",
+                    annee: "2018"
+
+                }
             }, {
                 id_artiste: "14",
                 name_artiste: "SCH",
                 page: "",
-                punch: {}
+                punch: {
+                    texte: "Le savoir est une arme, j'suis calibré, j'suis cultivé",
+                    titre: "Liquide",
+                    album: "17",
+                    annee: "2015"
+                }
             }
         ]
     };
