@@ -1,0 +1,9 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "artist": [
+    { "id": 1, "name": "Booba", "postId": 1 }
+  ],
+  "profile": { "name": "Pelle" }
+}
